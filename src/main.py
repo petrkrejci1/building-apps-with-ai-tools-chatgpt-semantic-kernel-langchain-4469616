@@ -17,8 +17,20 @@ from typing import Dict, List, Optional
 from langchain.document_loaders.base import BaseLoader
 from langchain.docstore.document import Document
 
+# load_dotenv()
+# openai.api_key = os.getenv("OPENAI_API_KEY")
 
 loader = CSVLoader(
     file_path="./src/dataset_small.csv", source_column="title")
 
 data = loader.load()
+
+
+
+
+
+# def main() -> None:
+#     pass
+
+# if __name__ == "__main__":
+#     main()
